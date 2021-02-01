@@ -1,0 +1,147 @@
+html {
+ font-size: 100%;
+ box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+ box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+ padding: 0;
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ color: $darkGrayishBlueText;
+ font-weight: 700;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+body {
+ min-height: 100vh;
+ margin: 0;
+ padding: 0;
+ font-family: "Inter", sans-serif;
+ font-size: $fontSm; // 14px
+}
+
+// Helper Classes
+.text-red {
+ color: $brightRed;
+}
+
+@include breakpoint-up(large) {
+ .dt-margin {
+  max-width: 80%;
+  margin: 0 auto;
+ }
+}
+
+// Active Classes
+.active.header__toggle--wrap {
+ background-image: linear-gradient($toggleDark);
+}
+
+.active.header__toggle--circle {
+ transform: translateX(-119%);
+ transition: all 100ms ease-in-out;
+}
+
+// Dark Mode
+body.dark {
+ background-color: $veryDarkBlueBg;
+}
+
+.header__background.dark {
+ background-color: $veryDarkBlueTopBgPattern;
+}
+
+header.dark {
+ background-color: $veryDarkBlueTopBgPattern;
+}
+
+.header__title.dark {
+ color: $WhiteText;
+}
+
+.header__dark-mode.dark {
+ color: $desaturatedBlueText;
+}
+
+.header__sub.dark {
+ color: $desaturatedBlueText;
+}
+
+.header__toggle--circle.dark {
+ background-color: $darkDesaturatedBlueCardBg;
+}
+
+//////////////////////////////////
+//
+.cards .dark {
+ background-color: $darkDesaturatedBlueCardBg;
+}
+
+.cards__number--total.dark {
+ color: $WhiteText;
+ background-color: transparent;
+}
+
+.cards__name.dark {
+ color: $desaturatedBlueText;
+ background-color: transparent;
+}
+
+.cards__followers.dark {
+ color: $desaturatedBlueText;
+ background-color: transparent;
+}
+
+.cards .dt-hover:hover {
+ background-color: $darkHover;
+}
+
+//////////////////////////////////
+//
+.overview .dark {
+ background-color: $darkDesaturatedBlueCardBg;
+}
+
+.overview__title.dark {
+ background-color: $veryDarkBlueBg;
+ color: $WhiteText;
+}
+
+.overview__number.dark {
+ color: $WhiteText;
+ background-color: transparent;
+}
+
+.overview__heading.dark {
+ color: $desaturatedBlueText;
+ background-color: transparent;
+}
+
+.overview .dt-hover:hover {
+ background-color: $darkHover;
+}
+
+//////////////////////////////////
+//
+.footer.dark {
+ color: $desaturatedBlueText;
+}
+.footer__link.dark {
+ color: $WhiteText;
+}

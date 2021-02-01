@@ -1,0 +1,286 @@
+.container {
+ margin: -7rem 1.5rem 0 1.5rem;
+ z-index: 1;
+ position: relative;
+ top: 12px;
+
+ @include breakpoint-up(large) {
+  margin: 0 1.5rem 0 1.5rem;
+ }
+}
+
+.header__background {
+ position: absolute;
+ top: 0;
+ height: 14rem;
+ width: 100%;
+ background-color: $veryPaleBlueTopBgPattern;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ z-index: 0;
+
+ @include breakpoint-up(large) {
+  height: 14.5rem;
+ }
+}
+
+.header {
+ position: relative;
+ z-index: 1;
+ margin: 2rem 1.5rem 3rem 1.5rem;
+
+ @include breakpoint-up(large) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: -3.75rem;
+ }
+
+ &__title {
+  font-weight: 700;
+  font-size: 1.425rem;
+  color: $veryDarkBlueText;
+  margin-bottom: 0.3rem;
+
+  @include breakpoint-up(large) {
+   font-size: 1.6rem;
+  }
+ }
+
+ &__sub {
+  font-size: 0.8rem;
+  color: $darkGrayishBlueText;
+  border-bottom: 1px solid $darkGrayishBlueText;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.1rem;
+  font-weight: 700;
+
+  @include breakpoint-up(large) {
+   border-bottom: none;
+   font-size: 0.9rem;
+  }
+ }
+
+ &__dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $darkGrayishBlueText;
+  padding-bottom: 5.5rem;
+
+  @include breakpoint-up(large) {
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   top: -83px;
+   font-size: 0.9rem;
+   padding-bottom: 1rem;
+  }
+ }
+
+ &__toggle--wrap {
+  position: relative;
+  width: 2.7rem;
+  height: 1.4rem;
+  border-radius: 50rem;
+  background-color: $toggleLight;
+  cursor: pointer;
+
+  @include breakpoint-up(large) {
+   margin-left: 0.8rem;
+  }
+ }
+
+ &__toggle--circle {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 3px;
+  right: 4px;
+  border-radius: 100rem;
+  background-color: #fff;
+
+  transform: translateX(4%);
+  transition: all 100ms ease-in-out;
+ }
+}
+
+// Cards
+.cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(13.6875rem, 1fr));
+ gap: 1.5rem;
+ text-align: center;
+ margin-bottom: 3.2rem;
+ position: relative;
+
+ @include breakpoint-up(medium) {
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+ @include breakpoint-up(large) {
+  grid-template-columns: repeat(4, 1fr);
+ }
+
+ &__item {
+  min-height: 13.6875rem;
+  padding: 0;
+  border-top: 4px solid $colorFacebook;
+  border-radius: 4px;
+  background-color: $lightGrayishBlueCardBg;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+   background-color: $lightHover;
+  }
+ }
+
+ &__icon--name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: $darkGrayishBlueText;
+
+  img {
+   padding-right: 0.4rem;
+  }
+ }
+
+ &__number--total {
+  margin: 1.375rem 0 1.2rem 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+ }
+
+ &__followers {
+  display: block;
+  margin-bottom: 1.7rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: $darkGrayishBlueText;
+  text-transform: uppercase;
+  letter-spacing: 0.25125rem;
+ }
+
+ &__daily {
+  margin-bottom: 1.5rem;
+  color: $limeGreen;
+  font-size: 0.6rem;
+  font-weight: 700;
+ }
+
+ &__daily--stats {
+  font-size: 0.7rem;
+ }
+
+ &__arrow-up {
+  position: relative;
+  top: -2px;
+  left: -3px;
+ }
+}
+
+// Overview
+.overview {
+ margin-top: 2.5rem;
+
+ &__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @include breakpoint-up(medium) {
+   grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint-up(large) {
+   grid-template-columns: repeat(4, 1fr);
+  }
+ }
+
+ &__title {
+  color: $darkGrayishBlueText;
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+ }
+
+ &__item {
+  min-height: 7.75rem;
+  padding: 1.5rem 1.525rem;
+  background-color: $lightGrayishBlueCardBg;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+   background-color: $lightHover;
+  }
+ }
+
+ &__heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  color: $darkGrayishBlueText;
+ }
+
+ &__number {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 700;
+ }
+
+ &__percentage {
+  color: $limeGreen;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding-top: 1.25rem;
+
+  img {
+   position: relative;
+   top: -2px;
+   left: -3px;
+  }
+ }
+}
+
+.footer {
+ color: $darkGrayishBlueText;
+ text-decoration: none;
+ text-align: center;
+ padding: 1.6rem 1.8rem 1.6rem 1.8rem;
+ margin-bottom: 1.6rem;
+ font-size: 0.8rem;
+}
+
+// Card Border Selectors
+#item-2 {
+ border-color: $colorTwitter;
+}
+
+#item-3 {
+ position: relative;
+ &::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  height: 0.25rem;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-image: linear-gradient((to right, #fdc468, #df4996));
+ }
+}
+
+#item-4 {
+ border-color: $colorYouTube;
+}

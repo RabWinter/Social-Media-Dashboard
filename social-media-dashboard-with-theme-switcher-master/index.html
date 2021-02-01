@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="icon"
+   type="image/png"
+   sizes="32x32"
+   href="./images/favicon-32x32.png"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+   rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <title>Frontend Mentor | Social Media Dashboard</title>
+ </head>
+ <body>
+  <div class="header__background"></div>
+  <header class="header">
+   <div class="header__text--wrapper">
+    <h1 class="header__title dt-margin">Social Media Dashboard</h1>
+    <p class="header__sub dt-margin">Total Followers: 23,004</p>
+    <p class="header__dark-mode dt-margin">
+     Dark Mode<span class="header__toggle--wrap">
+      <span class="header__dark-mode--toggle"
+       ><span class="header__toggle--circle"></span
+      ></span>
+     </span>
+    </p>
+   </div>
+  </header>
+  <div class="container">
+   <main>
+    <div class="content dt-margin">
+     <!-- Cards -->
+     <ul class="cards">
+      <li class="cards__item" id="item-1">
+       <div class="cards__icon--name">
+        <img src="/images/icon-facebook.svg" alt="Facebook" />
+        <span class="cards__name">@nathanf</span>
+       </div>
+       <p class="cards__number--total">
+        1987<span class="cards__followers">Followers</span>
+       </p>
+       <div class="cards__daily">
+        <img
+         src="/images/icon-up.svg"
+         alt="arrow-up"
+         class="cards__arrow-up"
+        /><span class="cards__daily--stats">12 Today</span>
+       </div>
+      </li>
+      <li class="cards__item" id="item-2">
+       <div class="cards__icon--name">
+        <img src="/images/icon-twitter.svg" alt="Facebook" />
+        <span class="cards__name">@nathanf</span>
+       </div>
+       <p class="cards__number--total">
+        1044<span class="cards__followers">Followers</span>
+       </p>
+       <div class="cards__daily">
+        <img
+         src="/images/icon-up.svg"
+         alt="arrow-up"
+         class="cards__arrow-up"
+        /><span class="cards__daily--stats">99 Today</span>
+       </div>
+      </li>
+      <li class="cards__item" id="item-3">
+       <div class="cards__icon--name">
+        <img src="/images/icon-instagram.svg" alt="Facebook" />
+        <span class="cards__name">@realnathanf</span>
+       </div>
+       <p class="cards__number--total">
+        11k<span class="cards__followers">Followers</span>
+       </p>
+       <div class="cards__daily">
+        <img
+         src="/images/icon-up.svg"
+         alt="arrow-up"
+         class="cards__arrow-up"
+        /><span class="cards__daily--stats">1099 Today </span>
+       </div>
+      </li>
+      <li class="cards__item" id="item-4">
+       <div class="cards__icon--name">
+        <img src="/images/icon-youtube.svg" alt="Facebook" />
+        <span class="cards__name">@Nathan F.</span>
+       </div>
+       <p class="cards__number--total">
+        8239<span class="cards__followers">Subscribers</span>
+       </p>
+       <div class="cards__daily">
+        <img
+         src="/images/icon-down.svg"
+         alt="arrow-up"
+         class="cards__arrow-up"
+        /><span class="text-red cards__daily--stats">144 Today</span>
+       </div>
+      </li>
+     </ul>
+
+     <!-- Overview -->
+     <div class="overview">
+      <h1 class="overview__title">Overview - Today</h1>
+      <ul class="overview__cards">
+       <li class="overview__item">
+        <p class="overview__heading">
+         Page Views<span class="overview__icon"
+          ><img src="/images/icon-facebook.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         87
+         <span class="overview__percentage"
+          ><img src="/images/icon-up.svg" alt="arrow-up" />3%</span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Likes<span class="overview__icon"
+          ><img src="/images/icon-facebook.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         52
+         <span class="overview__percentage"
+          ><img src="/images/icon-down.svg" alt="arrow-up" /><span
+           class="text-red"
+           >2%</span
+          ></span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Likes<span class="overview__icon"
+          ><img src="/images/icon-instagram.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         5462
+         <span class="overview__percentage"
+          ><img src="/images/icon-up.svg" alt="arrow-up" />2257%</span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Profile Views<span class="overview__icon"
+          ><img src="/images/icon-instagram.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         52k
+         <span class="overview__percentage"
+          ><img src="/images/icon-up.svg" alt="arrow-up" />1375%</span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Retweets<span class="overview__icon"
+          ><img src="/images/icon-twitter.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         117
+         <span class="overview__percentage"
+          ><img src="/images/icon-up.svg" alt="arrow-up" />303%</span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Likes<span class="overview__icon"
+          ><img src="/images/icon-twitter.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         507
+         <span class="overview__percentage"
+          ><img src="/images/icon-up.svg" alt="arrow-up" />553%</span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Likes<span class="overview__icon"
+          ><img src="/images/icon-youtube.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         107
+         <span class="overview__percentage"
+          ><img src="/images/icon-down.svg" alt="arrow-up" /><span
+           class="text-red"
+           >19%</span
+          ></span
+         >
+        </div>
+       </li>
+       <li class="overview__item">
+        <p class="overview__heading">
+         Total Views<span class="overview__icon"
+          ><img src="/images/icon-youtube.svg" alt="Facebook"
+         /></span>
+        </p>
+        <div class="overview__number">
+         1407
+         <span class="overview__percentage"
+          ><img src="/images/icon-down.svg" alt="arrow-up" /><span
+           class="text-red"
+           >12%</span
+          ></span
+         >
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </main>
+
+   <footer class="footer">
+    <div class="footer__wrap">
+     Challenge by
+     <a href="https://www.frontendmentor.io?ref=challenge" class="footer__link">
+      Frontend Mentor</a
+     >. Coded by
+     <a
+      href="https://github.com/RabWinter/Social-Media-Dashboard"
+      class="footer__link"
+      >Rab Winter</a
+     >.
+    </div>
+   </footer>
+  </div>
+
+  <script src="/app/js/script.js"></script>
+ </body>
+</html>
